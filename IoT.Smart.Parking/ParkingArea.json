@@ -1,0 +1,38 @@
+[
+  {
+    "id": "L1",
+    "state": "XYZ",
+    "slotsAvailable": 3,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        144.96901988983154,
+        -37.81476786129425
+      ]
+    },
+    "address": "95085 Florencio Lights, XYZ, AB",
+    "_rid": "vCdSAKvJFiIGAAAAAAAAAA==",
+    "_self": "dbs/vCdSAA==/colls/vCdSAKvJFiI=/docs/vCdSAKvJFiIGAAAAAAAAAA==/",
+    "_etag": "\"00000000-0000-0000-9740-8f48674b01d7\"",
+    "_attachments": "attachments/",
+    "_ts": 1629628156
+  },
+  {
+    "id": "L2",
+    "state": "XYZ1",
+    "slotsAvailable": 2,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        144.96288299560547,
+        -37.81341172909249
+      ]
+    },
+    "address": "95085 Florencio Lights, XYZ, AB",
+    "_rid": "vCdSAKvJFiIIAAAAAAAAAA==",
+    "_self": "dbs/vCdSAA==/colls/vCdSAKvJFiI=/docs/vCdSAKvJFiIIAAAAAAAAAA==/",
+    "_etag": "\"00000000-0000-0000-9740-849c17f401d7\"",
+    "_attachments": "attachments/",
+    "_ts": 1629628138
+  }
+]

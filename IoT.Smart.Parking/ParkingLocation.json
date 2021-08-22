@@ -1,0 +1,38 @@
+[
+  {
+    "id": "PL1M1",
+    "locationID": "L1",
+    "meterID": "M1",
+    "isAvailable": false,
+    "lastUpdate": 1519523100,
+    "_rid": "vCdSAMq-yIMBAAAAAAAAAA==",
+    "_self": "dbs/vCdSAA==/colls/vCdSAMq-yIM=/docs/vCdSAMq-yIMBAAAAAAAAAA==/",
+    "_etag": "\"00000000-0000-0000-974f-a718425d01d7\"",
+    "_attachments": "attachments/",
+    "_ts": 1629634639
+  },
+  {
+    "id": "PL1M2",
+    "locationID": "L1",
+    "meterID": "M2",
+    "isAvailable": false,
+    "lastUpdate": 1519523101,
+    "_rid": "vCdSAMq-yIMCAAAAAAAAAA==",
+    "_self": "dbs/vCdSAA==/colls/vCdSAMq-yIM=/docs/vCdSAMq-yIMCAAAAAAAAAA==/",
+    "_etag": "\"00000000-0000-0000-974f-ab859a2901d7\"",
+    "_attachments": "attachments/",
+    "_ts": 1629634646
+  },
+  {
+    "id": "PL2M1",
+    "locationID": "L2",
+    "meterID": "M1",
+    "isAvailable": false,
+    "lastUpdate": 1519523109,
+    "_rid": "vCdSAMq-yIMDAAAAAAAAAA==",
+    "_self": "dbs/vCdSAA==/colls/vCdSAMq-yIM=/docs/vCdSAMq-yIMDAAAAAAAAAA==/",
+    "_etag": "\"00000000-0000-0000-974f-ae87ace501d7\"",
+    "_attachments": "attachments/",
+    "_ts": 1629634651
+  }
+]

@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31515.178
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Containers", "Containers", "{C45B98BE-4496-48D9-B8EF-88BCFBC7C165}"
+	ProjectSection(SolutionItems) = preProject
+		ParkingArea.json = ParkingArea.json
+		ParkingDataSample.json = ParkingDataSample.json
+		ParkingLocation.json = ParkingLocation.json
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Queries", "Queries", "{44AA8BF1-4B06-4FF3-B1DA-42307989053B}"
+	ProjectSection(SolutionItems) = preProject
+		Area.sql = Area.sql
+		Location.sql = Location.sql
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IoT.Smart.Parking", "IoT.Smart.Parking\IoT.Smart.Parking.csproj", "{C0AA0279-4449-4DF8-9CC2-9DF9CD0B3B70}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IoT.Smart.Parking.Database", "IoT.Smart.Parking.Database\IoT.Smart.Parking.Database.csproj", "{DC457397-DB3C-4861-BE7B-B877DDDDE3B1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C0AA0279-4449-4DF8-9CC2-9DF9CD0B3B70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0AA0279-4449-4DF8-9CC2-9DF9CD0B3B70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0AA0279-4449-4DF8-9CC2-9DF9CD0B3B70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0AA0279-4449-4DF8-9CC2-9DF9CD0B3B70}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC457397-DB3C-4861-BE7B-B877DDDDE3B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC457397-DB3C-4861-BE7B-B877DDDDE3B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC457397-DB3C-4861-BE7B-B877DDDDE3B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC457397-DB3C-4861-BE7B-B877DDDDE3B1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DD58127B-AB97-46EA-88F3-B15CD62442DC}
+	EndGlobalSection
+EndGlobal
