@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>IoT.Smart.Parking</name>
+    </assembly>
+    <members>
+        <member name="M:IoT.Smart.Parking.Controllers.ParkingMeterController.Get(System.Int32)">
+            <summary>
+            Retrieve the state of parking meter
+            </summary>
+        </member>
+        <member name="M:IoT.Smart.Parking.Controllers.ParkingMeterController.GetNearest(Geolocation.Coordinate)">
+            <summary>
+            Retrieves closest available parking spot
+            </summary>
+        </member>
+        <member name="M:IoT.Smart.Parking.Controllers.ParkingMeterController.GetParkingState">
+            <summary>
+            Retreive parking area state data to drive a map of parking spots and their availability for a given region
+            </summary>
+        </member>
+        <member name="T:IoT.Smart.Parking.Repository.ParkingArea">
+            <summary>
+            An object for parking area
+            </summary>
+        </member>
+        <member name="P:IoT.Smart.Parking.Repository.ParkingArea.Id">
+            <summary>
+            ID of a parking area
+            </summary>
+        </member>
+        <member name="P:IoT.Smart.Parking.Repository.ParkingArea.AvailableSlots">
+            <summary>
+            No of slots available in parking area
+            </summary>
+        </member>
+        <member name="P:IoT.Smart.Parking.Repository.ParkingArea.Address">
+            <summary>
+            Address of parking area
+            </summary>
+        </member>
+        <member name="P:IoT.Smart.Parking.Repository.ParkingArea.Location">
+            <summary>
+            geo-location of a parking area
+            </summary>
+        </member>
+        <member name="P:IoT.Smart.Parking.Repository.ParkingArea.Distance">
+            <summary>
+            distance from your point
+            </summary>
+        </member>
+        <member name="P:IoT.Smart.Parking.Repository.ParkingMeter.Date">
+            <summary>
+            last updated time of parking meter location
+            </summary>
+        </member>
+        <member name="P:IoT.Smart.Parking.Repository.ParkingMeter.isAvailable">
+            <summary>
+            is parking location available
+            </summary>
+        </member>
+        <member name="P:IoT.Smart.Parking.Repository.ParkingMeter.Id">
+            <summary>
+            Id of parking meter
+            </summary>
+        </member>
+        <member name="P:IoT.Smart.Parking.Repository.ParkingMeter.AreaId">
+            <summary>
+            Id of parking area
+            </summary>
+        </member>
+    </members>
+</doc>

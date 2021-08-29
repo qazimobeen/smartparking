@@ -1,0 +1,228 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "IoT.Smart.Parking",
+    "description": "An API for 3rd party integration",
+    "version": "v1"
+  },
+  "paths": {
+    "/ParkingMeter/GetMeterState": {
+      "get": {
+        "tags": [
+          "ParkingMeter"
+        ],
+        "summary": "Retrieve the state of parking meter",
+        "parameters": [
+          {
+            "name": "Id",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ParkingMeter"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ParkingMeter"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ParkingMeter"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/ParkingMeter/GetNearest": {
+      "post": {
+        "tags": [
+          "ParkingMeter"
+        ],
+        "summary": "Retrieves closest available parking spot",
+        "parameters": [
+          {
+            "name": "Latitude",
+            "in": "query",
+            "schema": {
+              "type": "number",
+              "format": "double"
+            }
+          },
+          {
+            "name": "Longitude",
+            "in": "query",
+            "schema": {
+              "type": "number",
+              "format": "double"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ParkingArea"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ParkingArea"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ParkingArea"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/ParkingMeter/GetParkingState": {
+      "get": {
+        "tags": [
+          "ParkingMeter"
+        ],
+        "summary": "Retreive parking area state data to drive a map of parking spots and their availability for a given region",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ParkingArea"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ParkingArea"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ParkingArea"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Coordinate": {
+        "type": "object",
+        "properties": {
+          "latitude": {
+            "type": "number",
+            "format": "double"
+          },
+          "longitude": {
+            "type": "number",
+            "format": "double"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ParkingArea": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "description": "ID of a parking area",
+            "format": "int32"
+          },
+          "availableSlots": {
+            "type": "integer",
+            "description": "No of slots available in parking area",
+            "format": "int32"
+          },
+          "address": {
+            "type": "string",
+            "description": "Address of parking area",
+            "nullable": true
+          },
+          "location": {
+            "$ref": "#/components/schemas/Coordinate"
+          },
+          "distance": {
+            "type": "number",
+            "description": "distance from your point",
+            "format": "double"
+          }
+        },
+        "additionalProperties": false,
+        "description": "An object for parking area"
+      },
+      "ParkingMeter": {
+        "type": "object",
+        "properties": {
+          "date": {
+            "type": "string",
+            "description": "last updated time of parking meter location",
+            "format": "date-time"
+          },
+          "isAvailable": {
+            "type": "boolean",
+            "description": "is parking location available"
+          },
+          "id": {
+            "type": "integer",
+            "description": "Id of parking meter",
+            "format": "int32"
+          },
+          "areaId": {
+            "type": "integer",
+            "description": "Id of parking area",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}

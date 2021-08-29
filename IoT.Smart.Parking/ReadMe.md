@@ -1,0 +1,1 @@
+I have selected following map http://geojson.io/#map=16/-37.8140/144.9646 for our parking area
