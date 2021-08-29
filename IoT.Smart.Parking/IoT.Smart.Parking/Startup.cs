@@ -15,6 +15,8 @@ using Microsoft.Extensions.Azure;
 using Azure.Storage.Queues;
 using Azure.Storage.Blobs;
 using Azure.Core.Extensions;
+using System.Reflection;
+using System.IO;
 
 namespace IoT.Smart.Parking
 {
@@ -30,12 +32,16 @@ namespace IoT.Smart.Parking
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-
-            services.AddControllers();
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "IoT.Smart.Parking", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "IoT.Smart.Parking", Version = "v1", Description = "An API for 3rd party integration" });
+
+                var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
+                var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
+                c.IncludeXmlComments(xmlPath);
             });
+
+            services.AddControllers();
             services.AddApplicationInsightsTelemetry();
             services.AddAzureClients(builder =>
             {

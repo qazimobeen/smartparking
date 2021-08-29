@@ -20,6 +20,20 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IoT.Smart.Parking", "IoT.Sm
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IoT.Smart.Parking.Database", "IoT.Smart.Parking.Database\IoT.Smart.Parking.Database.csproj", "{DC457397-DB3C-4861-BE7B-B877DDDDE3B1}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documents", "Documents", "{D9436287-B65A-473C-BF22-071947F6DC79}"
+	ProjectSection(SolutionItems) = preProject
+		..\SmartParking.docx = ..\SmartParking.docx
+		..\SmartParking.drawio = ..\SmartParking.drawio
+		..\SmartParking.xlsx = ..\SmartParking.xlsx
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{FBB04A86-7728-47EB-AFAD-2602E8335C4C}"
+	ProjectSection(SolutionItems) = preProject
+		IoT.Smart.Parking\bin\Debug\net5.0\IoT.Smart.Parking.json = IoT.Smart.Parking\bin\Debug\net5.0\IoT.Smart.Parking.json
+		IoT.Smart.Parking\bin\Debug\net5.0\IoT.Smart.Parking.xml = IoT.Smart.Parking\bin\Debug\net5.0\IoT.Smart.Parking.xml
+		ReadMe.md = ReadMe.md
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
